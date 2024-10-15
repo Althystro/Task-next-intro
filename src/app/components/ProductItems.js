@@ -2,15 +2,11 @@ import React from "react";
 
 function ProductItems() {
   return (
-    <div>
-      <h1>Cookies and Beyond</h1>
-      <p>When cookie maniacs gather </p>
-      <img
-        src={
-          "https://www.cookietakeabite.com/wp-content/uploads/2020/02/cookietakeabitecookiecounter.jpg"
-        }
-        alt="Logo"
-      />
+    <div class="justify-between	">
+      <div>
+        <h1 class=" font-bold text-7xl">Cookies and Beyond</h1>
+        <h4 class=" font-bold text-3xl">When cookie maniacs gather </h4>
+      </div>
     </div>
   );
 }
