@@ -2,17 +2,18 @@
 
 import Image from "next/image";
 import cookieShop from "./assets/cookie_shop.jpg";
-import ProductItems from "./components/ProductItems";
-import Products from "./products";
+import ProductItem from "./components/ProductItems";
+// import Products from "./products";
+import ProductList from "./components/ProductList";
 import { useState } from "react";
 
-const notUsed = Products.map((product) => (
-  <ProductItems
-    price={product.price}
-    name={product.name}
-    image={product.image}
-  />
-));
+// const productList = Products.map((product) => (
+//   <ProductItem
+//     price={product.price}
+//     name={product.name}
+//     image={product.image}
+//   />
+// ));
 
 export default function Home() {
   const [count, setCount] = useState(0);
@@ -39,7 +40,7 @@ export default function Home() {
         {/* 
         Task 4
         */}
-        {notUsed}
+        <ProductList />
 
         {/* 
         Task 2

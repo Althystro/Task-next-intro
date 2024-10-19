@@ -3,7 +3,7 @@ import Image from "next/image";
 import Products from "../products";
 
 // Task 5
-// function ProductItems() {
+// function ProductItem() {
 //   const cookieslist = Products.map((product) => (
 //     <div class="p-10 flex flex-col justify-center items-center">
 //       <Image src={product.image} alt="Logo" width={100} height={100} />
@@ -13,7 +13,7 @@ import Products from "../products";
 //   ));
 //   return <>{cookieslist}</>;
 // }
-function ProductItems({ name, price, image }) {
+function ProductItem({ name, price, image }) {
   return (
     <div class="p-10 flex flex-col justify-center items-center">
       <Image src={image} alt="Logo" width={100} height={100} />
@@ -31,4 +31,4 @@ function ProductItems({ name, price, image }) {
 //   </div>
 // ));
 
-export default ProductItems;
+export default ProductItem;
